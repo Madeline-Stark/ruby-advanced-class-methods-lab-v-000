@@ -48,11 +48,11 @@ class Song
   end
 
   def self.new_from_filename(string)
-    self.find_or_create_by_name(string)
+    song = self.find_or_create_by_name(string)
     data = string.split(/[-,.]/)
-    self.class.artist_name = data[0]
+    song.artist_name = data[0]
     binding.pry
-    self.class.name = data[1]
+    song.name = data[1]
     #mp3 = data[2]
   end
 
