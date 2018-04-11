@@ -51,7 +51,7 @@ class Song
     self.find_or_create_by_name(string)
     data = string.split(/[-,.]/)
     self.class.artist_name = data[0]
-    #binding.pry
+    binding.pry
     self.class.name = data[1]
     #mp3 = data[2]
   end
