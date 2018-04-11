@@ -50,7 +50,7 @@ class Song
   def self.new_from_filename(string)
     song = self.find_or_create_by_name(string)
     data = string.split(/[-,.]/)
-    data.delete(/\s/)
+    data.delete(/[\s]/)
     artist_name = data[0]
     name = data[1]
     song.artist_name = artist_name
