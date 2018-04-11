@@ -49,7 +49,9 @@ class Song
 
   def self.song_from_filename(string)
     data = string.split(/[-,.]/)
-
+    @artist_name = data[0]
+    @name = data[1]
+    #mp3 = data[2]
   end
 
 
