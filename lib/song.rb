@@ -49,8 +49,8 @@ class Song
 
   def self.new_from_filename(string)
     data = string.split(/[-,.]/)
-    @artist_name = data[0]
-    @name = data[1]
+    artist_name = data[0]
+    name = data[1]
     #mp3 = data[2]
   end
 
