@@ -47,5 +47,10 @@ class Song
     @@all.sort_by { |a| a.name }
   end
 
+  def self.song_from_filename(string)
+    data = string.split(/[-,.]/)
+
+  end
+
 
 end
