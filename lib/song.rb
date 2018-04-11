@@ -54,7 +54,7 @@ class Song
     name = data[1]
     song.artist_name = artist_name
     song.name = name
-    binding.pry
+    #binding.pry
     #mp3 = data[2]
   end
 
