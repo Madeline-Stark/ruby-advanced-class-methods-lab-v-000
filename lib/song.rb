@@ -48,7 +48,7 @@ class Song
   end
 
   def self.new_from_filename(string)
-    self.find_or_create_by_name
+    self.find_or_create_by_name(string)
     data = string.split(/[-,.]/)
     self.artist_name = data[0]
     #binding.pry
